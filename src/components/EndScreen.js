@@ -12,7 +12,7 @@ const EndScreen = ({ isLoggedIn, setIsLoggedIn, isOnGame, setIsOnGame, isComplet
                 setFileContent("> d0 y0u r3m3mb3r 7h3 c0l0ur5?")
                 break;
             case 3:
-                setFileContent("> to request for approval of purchase: jacket, duct tape, ice cream sticks, superglue")
+                setFileContent("> to request for approval of purchase: ice cream stickss")
                 break;
             case 4:
                 setFileContent("> this game was coded in React.js in 2.5 days :3")

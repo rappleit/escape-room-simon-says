@@ -33,7 +33,7 @@ const Lockscreen = ({isLoggedIn, setIsLoggedIn, isOnGame, setIsOnGame, isComplet
             <div className="mainLockContainer">
                 <img src="lockIcon.svg"/>
                 <h1>Enter Passcode</h1>
-                <form onSubmit={e => { e.preventDefault(); }}>
+                <form onSubmit={e => { e.preventDefault(); }} autocomplete="off">
                     <input
                         type="text"
                         id="passcodeInput"
