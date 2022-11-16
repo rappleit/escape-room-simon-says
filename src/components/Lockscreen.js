@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const Lockscreen = ({isLoggedIn, setIsLoggedIn, isOnGame, setIsOnGame, isComplete, setIsComplete}) => {
-    const passcode = "owweh"; //can be changed
+    const passcode = "thinktank23"; //can be changed
     const [userPass, setUserPass] = useState("");
     const [errorMessage, setErrorMessage] = useState("");
     

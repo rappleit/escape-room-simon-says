@@ -13,7 +13,7 @@ const Game = ({isLoggedIn, setIsLoggedIn, isOnGame, setIsOnGame, isComplete, set
     const [failMessage, setFailMessage] = useState("")
 
 
-    const sequence = ["red", "yellow", "green", "blue", "green", "yellow"]; // can be changed
+    const sequence = ["red", "green", "red", "yellow", "blue", "yellow", "red", "yellow", "red"]; // can be changed
     
     const flashColour = (colour) => {
         const colors = ["red", "blue", "yellow", "green"];
@@ -41,7 +41,7 @@ const Game = ({isLoggedIn, setIsLoggedIn, isOnGame, setIsOnGame, isComplete, set
             if (currentSimonColourIndex < round && currentSimonColour != "") {
                 timeout = setTimeout(() => {
                     setCurrentSimonColourIndex(currentSimonColourIndex + 1)
-                }, 500);
+                }, 500); // time between each flash
             } else {
                 //end Simon turn
                 setCurrentSimonColour("");
@@ -117,11 +117,11 @@ const Game = ({isLoggedIn, setIsLoggedIn, isOnGame, setIsOnGame, isComplete, set
 
     useEffect(() => {
         let timeout1;
-        if (round > 1 && round <= 6) {
+        if (round > 1 && round <= 9) {
             timeout1 = setTimeout(() => {
                 setIsSimonTurn(true);
             }, 800);
-        } else if (round == 7) {
+        } else if (round == 10) {
             //WIN GAME
             setIsOnGame(false);
             setIsComplete(true);
@@ -149,7 +149,7 @@ const Game = ({isLoggedIn, setIsLoggedIn, isOnGame, setIsOnGame, isComplete, set
             </div>
             <div className="gameContainer">
                 <h1>Simon Says</h1>
-                <p>For every round, the coloured buttons below will flash in an increasingly complex pattern. Click on the coloured buttons in the correct sequence to complete the round. To win, complete 6 successive rounds.</p>
+                <p>For every round, the coloured buttons below will flash in an increasingly complex pattern. Click on the coloured buttons in the correct sequence to complete the round. To win, complete 9 successive rounds.</p>
                 <div className="simonGame">
                     <div className="greenredRow">
                         <button className="simonGreen simonButton" id="green" disabled={(isSimonTurn) ? true: false} onClick={() => handlePlayerInput("green")}></button>

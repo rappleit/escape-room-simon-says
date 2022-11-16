@@ -48,7 +48,7 @@ const SidePanel = ({isLoggedIn, setIsLoggedIn}) => {
                         </div>
                         <p>Network ID: 5Q83HJ7KX1</p>
                         <p>Ping: 5.8ms</p>
-                        <p>Location: [REDACTED]</p>
+                        <p>Location: thinktank23</p>
                     </div>
                 </div>
             </div>
