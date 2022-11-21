@@ -15,7 +15,7 @@ const EndScreen = ({ isLoggedIn, setIsLoggedIn, isOnGame, setIsOnGame, isComplet
                 setFileContent("> to request for approval of purchase: ice cream sticks and bicycle lock")
                 break;
             case 4:
-                setFileContent("> this game was coded in React.js in 2.5 days :3")
+                setFileContent("> this game was coded in React.js in 2.5 days by semipreparedcat :3")
         }
     }
 
