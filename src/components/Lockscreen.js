@@ -6,7 +6,7 @@ const Lockscreen = ({isLoggedIn, setIsLoggedIn, isOnGame, setIsOnGame, isComplet
     const [errorMessage, setErrorMessage] = useState("");
     
     const handleLogin = () => {
-        if (userPass == passcode) {
+        if (userPass === passcode) {
             setErrorMessage("");
             setUserPass("");
             setIsLoggedIn(true);
